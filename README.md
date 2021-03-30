@@ -1,15 +1,13 @@
 ## <사용 환경>
-Java JDK 1.8
-Mybatis 3.5 mybatis-spring
-HTML5/CSS3/JavaScript
-BootStrap 3
-J-Query(ajax), Spring Rest API
-Servlet/JSP Servlet 4.0
-Spring- framework(AOP, MVC)  v5.2.13
- - Spring task/ Spring tx/ Spring WebSocket
-Spring security
-- Oracle DatatBase 11g 기준
- - SQL/저장공간 구성
+-Java JDK 1.8
+-Mybatis 3.5 mybatis-spring
+-HTML5/CSS3/JavaScript
+-BootStrap 3
+-J-Query(ajax), Spring Rest API
+-Servlet/JSP Servlet 4.0
+-Spring- framework(AOP, MVC)  v5.2.13
+- Spring task/ Spring tx/ Spring WebSocket/ Spring security
+- Oracle DatatBase 11g 기준(SQL/저장공간 구성)
 
 Java 언어를 사용하여 MVC구조인 Spring으로 웹 사이트를 구현하였습니다. 필요한 데이터를 사용하기 위해서는 OracleDB로  MyBatis로 매핑을 하여 사용하였습니다.
 
