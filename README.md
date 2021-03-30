@@ -41,7 +41,7 @@
 ![chart](https://user-images.githubusercontent.com/66732896/112921632-16baa100-9146-11eb-84e7-929b9c3a5fdb.PNG)
 
 
--BootStrap의 Chart.js를 사용 
+-BootStrap의 Chart.js를 사용   
 -REST API방식으로 구현   
 -Date 객체 생성을 통해 오늘 날짜 기준으로 6일 전에 데이터를 확인      
 -원하는 월 또는 년의 결과 값을 ajax로 하여 db를 통해 데이터를 객체화하여 받아와 차트를 구현
