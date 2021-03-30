@@ -11,12 +11,11 @@ Spring security
 - Oracle DatatBase 11g 기준
  - SQL/저장공간 구성
 
-ava 언어를 사용하여 MVC구조인 Spring으로 웹 사이트를 구현하였습니다. 필요한 데이터를 사용하기 위해서는 OracleDB로  MyBatis로 매핑을 하여 사용하였습니다.
+Java 언어를 사용하여 MVC구조인 Spring으로 웹 사이트를 구현하였습니다. 필요한 데이터를 사용하기 위해서는 OracleDB로  MyBatis로 매핑을 하여 사용하였습니다.
 
 ## <스크린 샷>
 
 -회원가입
-
 <일치 시>
 ![image](https://user-images.githubusercontent.com/66732896/112922019-b9731f80-9146-11eb-872f-5a310d715ae2.png)
 
