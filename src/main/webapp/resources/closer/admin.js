@@ -169,7 +169,10 @@ var adminService = (function(){
       return [ yy, "/", (mm>9 ? '':'0')+mm, '/', (dd>9 ? '':'0')+dd, ' '].join('');
       
    }// showTime-end
-//==========================================
+   
+   
+   
+//==========================================차트===========================
  
 
 function mainChart(callback,error){
@@ -490,7 +493,7 @@ function allChartMonth(year,month,callback,error){
        }
     }); //ajax-end
  }
-   
+//==========================================차트===========================   
    
    
    return {
