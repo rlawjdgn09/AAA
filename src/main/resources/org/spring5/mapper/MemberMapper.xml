@@ -26,7 +26,7 @@
 		<result property="authority" column="authority"/>
 	</resultMap>
 	
-	
+	<!--사용자 권한 찾기 -->
 	<select id="read" resultMap="memberMap">
 	 <![CDATA[
 		select mem.*, auth.authority
@@ -35,6 +35,11 @@
 	 ]]>
 
 	</select>
+	<!--회원가입시 사용자 권한 추가 -->
+	<insert id="memberAuthInsert" parameterType="org.spring5.domain.MemberVO">
+		insert into tAuction.memberAuth
+		values (#{memberId},default)
+	</insert>
 <!------------------------------------------시큐리티 ------------------------------------------------------>	
 	
 <!------------------------------------------회원가입 ------------------------------------------------------>	
@@ -52,11 +57,7 @@
 		insert into tAuction.member
 		values (#{memberId},#{memberPassword},#{memberName},#{memberEmail}, #{memberAddressCode},#{memberAddress},#{memberAddressDetail},#{memberAddressExtra},#{memberPhoneNumber},default,default)
 	</insert>
-	<!--회원가입시 사용자 권한 추가 -->
-	<insert id="memberAuthInsert" parameterType="org.spring5.domain.MemberVO">
-		insert into tAuction.memberAuth
-		values (#{memberId},default)
-	</insert>
+
 <!------------------------------------------회원가입 ------------------------------------------------------>	
 	
 	<!-- 회원정보 가져오기 -->
