@@ -55,8 +55,7 @@
 
 </details>
 
-- 참고자료
-<a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/java/org/spring5/controller/AdminControllerImpl.java">
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/java/org/spring5/controller/AdminControllerImpl.java">참고 코드</a>
   
 -BootStrap의 Chart.js를 사용   
 -REST API방식으로 구현   
