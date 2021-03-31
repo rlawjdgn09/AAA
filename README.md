@@ -27,6 +27,7 @@
     <b>회원 가입 스크린샷</b><br>
   </summary>
 <일치 시>
+  
 ![image](https://user-images.githubusercontent.com/66732896/112922019-b9731f80-9146-11eb-872f-5a310d715ae2.png)
 
 <불일치 시>
@@ -46,6 +47,7 @@
   </summary>
 
 <메인 차트 및 일별 상황표>
+
 ![mainChart](https://user-images.githubusercontent.com/66732896/112921058-11a92200-9145-11eb-9a70-7602fde512a9.png)
 
 <년/월 차트>
@@ -53,6 +55,9 @@
 
 </details>
 
+- 참고자료
+<a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/java/org/spring5/controller/AdminControllerImpl.java">
+  
 -BootStrap의 Chart.js를 사용   
 -REST API방식으로 구현   
 -Date 객체 생성을 통해 오늘 날짜 기준으로 6일 전에 데이터를 확인      
