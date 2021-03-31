@@ -18,6 +18,9 @@
 	</resultMap>
 	
 	
+	
+<!------------------------------------------시큐리티 ------------------------------------------------------>		
+	
 	<resultMap type="org.spring5.domain.AuthVO" id="authMap">
 		<result property="memberId" column="memberId"/>
 		<result property="authority" column="authority"/>
@@ -32,13 +35,9 @@
 	 ]]>
 
 	</select>
+<!------------------------------------------시큐리티 ------------------------------------------------------>	
 	
-	<!-- 회원정보 가져오기 -->
-	<select id="memberSelect" resultType="org.spring5.domain.MemberVO">
-	<![CDATA[
-		select * from tAuction.member where memberId = #{memberId} 
-		]]>
-	</select>
+<!------------------------------------------회원가입 ------------------------------------------------------>	
 	
 	<!--아이디 중복 체크  -->
 	<select id="checkId" parameterType="String" resultType="Integer">
@@ -58,6 +57,14 @@
 		insert into tAuction.memberAuth
 		values (#{memberId},default)
 	</insert>
+<!------------------------------------------회원가입 ------------------------------------------------------>	
+	
+	<!-- 회원정보 가져오기 -->
+	<select id="memberSelect" resultType="org.spring5.domain.MemberVO">
+	<![CDATA[
+		select * from tAuction.member where memberId = #{memberId} 
+		]]>
+	</select>
 	
 	 <!-- 회원정보 수정 -->
   	<update id="memberModify" parameterType="org.spring5.domain.MemberVO">
