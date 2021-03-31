@@ -35,6 +35,9 @@
 
 </details>
 
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/java/org/spring5/controller/MemberControllerImpl.java">참고자료(컨트롤러)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/resources/org/spring5/mapper/MemberMapper.xml">참고자료(매퍼.xml)</a>
+
 -id 입력시 rest방식으로 ajax를 사용하여 db의 데이터와 데이터의 존재여부를 확인하여 중복시 회원가입 버튼 비활성화, 없을 시 버튼 활성화   
 -비밀번호 및 비밀번호 확인은 서로 입력값을 비교하여 동일시 버튼 활성/동일 하지 않을 시 비활성화   
 -우편번호는 카카오 다음 API를 사용   
@@ -79,6 +82,10 @@
 ![image](https://user-images.githubusercontent.com/66732896/112922438-72d1f500-9147-11eb-852d-e1662c52d95c.png)
 
 </details>
+
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/resources/org/spring5/mapper/MemberMapper.xml">참고자료(매퍼.xml)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/tree/main/src/main/java/org/spring5/security">참고자료(시큐리티 클래스)</a>
+
 
 -스프링 시큐리티를 이용 하였으며 사용자에 대해 권한이 인증이 된다면 로그인   
 -회원 가입과 동시에 사용자로써 권한이 주어지고 로그인시 db에 저장된 권한(사용자/관리자)에 따라 사용 기능 구분   
