@@ -64,7 +64,7 @@
 		where flag='R'
 	</select>
 	
-	/////////////////////////////////////////////////차트////////////////////////////////////////
+<!---------------------------------------차트 ------------------------------------------------>
 	<!-- 일별 방문자 수 -->
  	<select id="visitorCountView" parameterType="String" resultType="String">
 	       select nvl(todayCount, '0') as todayCount
@@ -155,8 +155,7 @@
 	from tAuction.board a left outer join tAuction.auctionDetail b on a.bno=b.bno
 	where to_char(regdate,'yyyy/mm/dd')=#{day} and winner='T'
 	</select>
-	
-	///////////////////////////////////////////////////////////////////////////////
+<!---------------------------------------차트 ------------------------------------------------>
 	
 	
 	
