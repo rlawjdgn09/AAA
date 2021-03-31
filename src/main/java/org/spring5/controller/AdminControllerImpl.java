@@ -236,11 +236,11 @@ public class AdminControllerImpl implements AdminController{
 	      return new ResponseEntity<>(list,HttpStatus.OK);
 	   }   
 	
+	//////////////////////////////////////////////////////////////
 	
-	
-	
+	//안쓰는것
 	 //년/월 차트 페이지 호출
-	@Override
+	/*@Override
 	@GetMapping("/chartYear")
 	public void chartYear(Model model) {
 		
@@ -250,7 +250,7 @@ public class AdminControllerImpl implements AdminController{
 	@GetMapping("/chartMonth")
 	public void chartMonth(Model model) {
 		
-	}
+	}*/
 
 	//사용자 정보 완전 삭제
 	@Override
