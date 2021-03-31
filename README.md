@@ -57,7 +57,7 @@
 
 - <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/java/org/spring5/controller/AdminControllerImpl.java">참고 코드(컨트롤러)</a>
 - <a href="https://github.com/rlawjdgn09/AAA/edit/main/src/main/java/org/spring5/service/AdminServiceImpl.java">참고 코드(서비스)</a>
-- <a href="https://github.com/rlawjdgn09/AAA/edit/main/src/main/resources/org/spring5/mapper/AdminMapper.xml>참고 코드(매퍼.xml)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/edit/main/src/main/resources/org/spring5/mapper/AdminMapper.xml">참고 코드(매퍼.xml)</a>
   
 -BootStrap의 Chart.js를 사용   
 -REST API방식으로 구현   
