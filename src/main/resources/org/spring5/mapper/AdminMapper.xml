@@ -42,22 +42,6 @@
 		FROM tAuction.cmBoard a
 		WHERE flag='R'
 	</select>
-<!--  -->
- 
-  	<select id="visitorCountView" parameterType="String" resultType="String">
-            select nvl(todayCount, '0') as todayCount
-       from tAuction.visitor right outer join dual
-       on to_char(todayDate,'yyyy/mm/dd')=#{day}
-    </select>
-
-
-<!--  -->
- 
-  	<select id="visitorCountViewYear" parameterType="String" resultType="String">
-            select sum(nvl(todayCount, '0')) as todayCount
-       from tAuction.visitor right outer join dual
-       on to_char(todayDate,'yyyy/mm')=#{yearMonth}
-    </select>
 
 
 
@@ -80,58 +64,78 @@
 		where flag='R'
 	</select>
 	
-	
-	
+	/////////////////////////////////////////////////차트////////////////////////////////////////
+	<!-- 일별 방문자 수 -->
+ 	<select id="visitorCountView" parameterType="String" resultType="String">
+	       select nvl(todayCount, '0') as todayCount
+	       from tAuction.visitor right outer join dual
+	       on to_char(todayDate,'yyyy/mm/dd')=#{day}
+   	 </select>
+
+
+	<!-- 년/월 별 방문자 수 -->
+
+	   <select id="visitorCountViewYear" parameterType="String" resultType="String">
+		select sum(nvl(todayCount, '0')) as todayCount
+	       from tAuction.visitor right outer join dual
+	       on to_char(todayDate,'yyyy/mm')=#{yearMonth}
+	    </select>
+
+	<!-- 년/월 사용자 가입 수 -->
 	<select id="memberYearCount" parameterType="String" resultType="String">
 		select count(*)
 		from tAuction.member
 		where to_char(joinDate,'yyyy/MM')=#{yearMonth}
 	</select>
 	
+	<!-- 년/월 별 게시물 등록 수 -->
 	<select id="boardYearCount" parameterType="String" resultType="String">
 		select count(*)
 		from tAuction.board
 		where to_char(regDate,'yyyy/MM')=#{yearMonth}
 	</select>
-	
+	<!-- 월/일별 사용자 등록 수 -->
 	<select id="memberMonthCount" parameterType="String" resultType="String">
 		select count(*)
 		from tAuction.member
 		where to_char(joinDate,'yyyy/MM/dd')=#{yearMonthDay}
 	</select>
-	
+	<!-- 월/일별 게시물 등록 수 -->
 	<select id="boardMonthCount" parameterType="String" resultType="String">
 		select count(*)
 		from tAuction.board
 		where to_char(regDate,'yyyy/MM/dd')=#{yearMonthDay}
 	</select>
 	
-	
+	<!-- 년/월 별 입찰 수 -->
 	<select id="bidCount" parameterType="String" resultType="String">
 	select nvl(sum(bidcount), 0)
 	from (select bidcount,regdate
       		from tAuction.board)
 	where to_char(regdate,'yyyy/mm')=#{yearMonth}
 	</select>
-	
+	<!-- 년/월 별 낙찰 등록 수 -->
 	<select id="successbidCount" parameterType="String" resultType="String">
 	select count(*)
 	from tAuction.board a left outer join tAuction.auctionDetail b on a.bno=b.bno
 	where to_char(regdate,'yyyy/mm')=#{yearMonth} and winner='T'
 	</select>
 	
+	<!-- 년/월 별 낙찰 가격 -->
 	<select id="successbidPrice" parameterType="String" resultType="String">
 	select nvl(sum(myPrice), 0)
 	from tAuction.board a left outer join tAuction.auctionDetail b on a.bno=b.bno
 	where to_char(regdate,'yyyy/mm')=#{yearMonth} and winner='T'
 	</select>
 	
+	<!-- 월/일별 게시물 등록 수 -->
 	<select id="dayBoardCount" parameterType="String" resultType="String">
 		select count(*)
 		from tAuction.board
 		where to_char(regDate,'yyyy/MM/dd')=#{day}
 	</select>
 	
+	<!-- 월/일별 게시물 입찰 수 -->
 	<select id="dayBidCount" parameterType="String" resultType="String">
 	select nvl(sum(bidcount), 0)
 	from (select bidcount,regdate
@@ -139,20 +143,20 @@
 	where to_char(regdate,'yyyy/mm/dd')=#{day}
 	</select>
 	
-	
+	<!-- 월/일별 게시물 낙찰  수 -->
 	<select id="daySuccessbidCount" parameterType="String" resultType="String">
 	select count(*)
 	from tAuction.board a left outer join tAuction.auctionDetail b on a.bno=b.bno
 	where to_char(regdate,'yyyy/mm/dd')=#{day} and winner='T'
 	</select>
-	
+	<!-- 월/일별 게시물 낙찰가격 -->
 	<select id="daySuccessbidPrice" parameterType="String" resultType="String">
 	select nvl(sum(myPrice), 0)
 	from tAuction.board a left outer join tAuction.auctionDetail b on a.bno=b.bno
 	where to_char(regdate,'yyyy/mm/dd')=#{day} and winner='T'
 	</select>
 	
-	
+	///////////////////////////////////////////////////////////////////////////////
 	
 	
 	
