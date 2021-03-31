@@ -41,7 +41,7 @@ public class MemberControllerImpl implements MemberController {
 	@Setter(onMethod_=@Autowired)
 	private PasswordEncoder pwencoder;
 	
-
+///////////////////////////////////////////////회원 가입//////////////////////////////////////////////////
 	
 	//사용자 등록 창 불러오기
 	@Override
@@ -50,8 +50,8 @@ public class MemberControllerImpl implements MemberController {
 		// TODO Auto-generated method stub
 		
 	}
-	//db에 사용자 정보 입력
 
+	//db에 사용자 정보 입력
 	@PostMapping("/memberInsert")
 	public String memberInsert(MemberVO memberVO, RedirectAttributes rttr) {
 		log.info("memberInsert 컨트롤러");
@@ -123,11 +123,12 @@ public class MemberControllerImpl implements MemberController {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-//	
+
 		String num = Integer.toString(checkNum);
 			
 		return new ResponseEntity<String>(num,HttpStatus.OK);
 	}
+///////////////////////////////////////////////회원 가입////////////////////////////////////////////////
 	
 	//==========================================================현준이형
 	//마이 페이지 창 불러오기
