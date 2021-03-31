@@ -35,8 +35,9 @@
 
 </details>
 
-- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/java/org/spring5/controller/MemberControllerImpl.java">참고자료(컨트롤러)</a>
-- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/resources/org/spring5/mapper/MemberMapper.xml">참고자료(매퍼.xml)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/java/org/spring5/controller/MemberControllerImpl.java">참고 자료(컨트롤러)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/resources/org/spring5/mapper/MemberMapper.xml">참고 자료(매퍼.xml)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/webapp/resources/closer/member.js">참고 자료(.js)</a>
 
 -id 입력시 rest방식으로 ajax를 사용하여 db의 데이터와 데이터의 존재여부를 확인하여 중복시 회원가입 버튼 비활성화, 없을 시 버튼 활성화   
 -비밀번호 및 비밀번호 확인은 서로 입력값을 비교하여 동일시 버튼 활성/동일 하지 않을 시 비활성화   
@@ -61,6 +62,7 @@
 - <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/java/org/spring5/controller/AdminControllerImpl.java">참고 코드(컨트롤러)</a>
 - <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/java/org/spring5/service/AdminServiceImpl.java">참고 코드(서비스)</a>
 - <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/resources/org/spring5/mapper/AdminMapper.xml">참고 코드(매퍼.xml)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/webapp/resources/closer/admin.js">참고 코드(.js)</a>
   
 -BootStrap의 Chart.js를 사용   
 -REST API방식으로 구현   
@@ -83,8 +85,9 @@
 
 </details>
 
-- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/resources/org/spring5/mapper/MemberMapper.xml">참고자료(매퍼.xml)</a>
-- <a href="https://github.com/rlawjdgn09/AAA/tree/main/src/main/java/org/spring5/security">참고자료(시큐리티 클래스)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/resources/org/spring5/mapper/MemberMapper.xml">참고 코드(매퍼.xml)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/tree/main/src/main/java/org/spring5/security">참고 코드(시큐리티 클래스)</a>
+- <a href="https://github.com/rlawjdgn09/AAA/blob/main/src/main/webapp/WEB-INF/spring/security-context.xml">참고 코드(시큐리티 설정.xml)</a>
 
 
 -스프링 시큐리티를 이용 하였으며 사용자에 대해 권한이 인증이 된다면 로그인   
