@@ -1,6 +1,6 @@
 var memberService = (function(){
    
-
+//////////////////////////////////회원가입/////////////////////////////////
 function checkId(callback,error){
          var memberId=$("#memberId").val();
          
@@ -68,6 +68,9 @@ function checkPassword(member,callback){
          }
       });
    }
+    
+//////////////////////////////////회원가입/////////////////////////////////
+   
 function memberInfo(memberId,callback){
    $.ajax({
          type:"post",
