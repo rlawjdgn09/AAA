@@ -238,7 +238,7 @@ public class AdminControllerImpl implements AdminController{
 	
 	
 	
-	/////안쓰는것
+	
 	 //년/월 차트 페이지 호출
 	@Override
 	@GetMapping("/chartYear")
